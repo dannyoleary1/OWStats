@@ -16,27 +16,36 @@ import XLPagerTabStrip
 class ParentViewController: ButtonBarPagerTabStripViewController {
     
     //going to define a colour scheme for a layout.
-    let darkBackground = UIColor(red:0.35, green:0.35, blue:0.43, alpha:1.0)
-    let darkBackgroundAlt = UIColor(red:0.41, green:0.41, blue:0.51, alpha:1.0)
-
+    let darkBackground = UIColor(red:35/255.0, green:35/255.0, blue:43/255.0, alpha:1.0)
+    let darkBackgroundAlt = UIColor(red:41/255.0, green:41/255.0, blue:51/255.0, alpha:1.0)
+    let overwatchGray = UIColor(red:180/255.0, green: 186/255.0, blue: 200/255.0, alpha:1.0)
+    let overwatchDarkBlue = UIColor(red:19/255.0, green: 42/255.0, blue: 77/255.0, alpha: 0.85)
+    let overwatchWhite = UIColor(red:1, green: 1, blue: 1, alpha: 0.60)
+    let overwatchBlack = UIColor(red:62/255.0, green: 56/255.0, blue: 58/255.0, alpha:1.00)
+    let overwatchLightBlue = UIColor(red:0, green: 195/255.0, blue: 1.0, alpha:1.00)
+    let overwatchAltWhite = UIColor(red:246/255.0, green: 246/255.0, blue:246/255.0, alpha:1.00)
+    let overwatchAltDarkBlue = UIColor(red: 19/255.0, green: 42/255.0, blue: 77/255.0, alpha:0.2)
+    
     
     override func viewDidLoad() {
         // Do any additional setup after loading the view.
-        settings.style.buttonBarBackgroundColor = darkBackgroundAlt
-        settings.style.buttonBarItemBackgroundColor = darkBackgroundAlt
-        settings.style.selectedBarBackgroundColor = UIColor(red: 33/255.0, green: 174/255.0, blue: 67/255.0, alpha: 1.0)
+        settings.style.buttonBarBackgroundColor = overwatchWhite
+        settings.style.buttonBarItemBackgroundColor = overwatchWhite
+        settings.style.selectedBarBackgroundColor = overwatchGray
      //   settings.style.buttonBarItemFont = .systemFont(ofSize: 11)
         settings.style.selectedBarHeight = 3.0
         settings.style.buttonBarMinimumLineSpacing = 0
-        settings.style.buttonBarItemTitleColor = darkBackgroundAlt //change
+     //   settings.style.buttonBarItemTitleColor = .blue //change
         settings.style.buttonBarItemsShouldFillAvailableWidth = true
     
         
         changeCurrentIndexProgressive = { [weak self] (oldCell:ButtonBarViewCell?, newCell: ButtonBarViewCell?,
                                                        progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
-            oldCell?.label.textColor = UIColor(red: 138/255.0, green: 138/255.0, blue: 144/255.0, alpha:1.0)
-            newCell?.label.textColor = .white
+            oldCell?.label.textColor = UIColor(red:62/255.0, green: 56/255.0, blue:58/255.0, alpha:1.00)
+            newCell?.label.textColor = UIColor(red:180/255.0, green: 186/255.0, blue: 200/255.0, alpha: 1.00)
+            newCell?.contentView.backgroundColor = UIColor(red:19/255.0, green:42/255.0, blue: 77/255.0, alpha: 0.85)
+            oldCell?.contentView.backgroundColor = UIColor(red:1, green:1, blue:1,alpha:0.60)
             
         }
         
