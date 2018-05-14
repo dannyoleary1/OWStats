@@ -1,0 +1,6 @@
+framework module Pods_OWStatsTests {
+  umbrella header "Pods-OWStatsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
