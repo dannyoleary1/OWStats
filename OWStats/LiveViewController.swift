@@ -8,12 +8,46 @@
 
 import UIKit
 import XLPagerTabStrip
+import WebKit
 
 class LiveViewController: UIViewController, IndicatorInfoProvider {
 
+    
+    @IBOutlet weak var webPlayer: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        let interactiveEmbedCode = """
+//        <div id="player"></div>
+//        <script type="text/javascript">
+//        var options = {
+//        width: "1280",
+//        height: "720",
+//        channel: "overwatch",
+//        playsinline: "true",
+//        };
+//        var player = new Twitch.Player("player", options);
+//        player.setVolume(0.5);
+//        </script>
+//        """
+        let interactiveEmbedCode = """
+        <div id="player"></div>
+        <script type="text/javascript">
+        var options = {
+        width: "1280",
+        height: "720",
+        channel: "dallas",
+        video: "v106400740",
+        "playsinline": "true"
+        };
+        var player = new Twitch.Player("player", options);
+        player.setVolume(0.5);
+        </script>
+        """
+        print("itloads?")
+        
+        webPlayer.loadHTMLString(interactiveEmbedCode, baseURL: nil)
+        print (webPlayer)
         // Do any additional setup after loading the view.
     }
 

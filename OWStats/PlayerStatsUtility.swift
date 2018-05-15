@@ -15,7 +15,7 @@ class PlayerStatsUtility{
     /*
      A simple get request to CoreData. This may be used later.
      */
-    class func getPlayerStats(){
+    class func getPlayerStats() -> NSManagedObject?{
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "PlayerStatsComp")
@@ -23,11 +23,13 @@ class PlayerStatsUtility{
         do {
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject] {
-                print (data)
+                return data
             }
         } catch {
             print ("Failed")
+            
         }
+        return nil
     }
     /*
      Reference: aggregateAchievements function in Utility class.

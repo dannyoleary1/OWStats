@@ -9,6 +9,7 @@ target 'OWStats' do
   # Pods for OWStats
 
   pod 'XLPagerTabStrip', '~> 8.0'
+  pod 'Charts'
 
   target 'OWStatsTests' do
     inherit! :search_paths

@@ -25,7 +25,7 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     let overwatchBlack = UIColor(red:62/255.0, green: 56/255.0, blue: 58/255.0, alpha:1.00)
     let overwatchLightBlue = UIColor(red:0, green: 195/255.0, blue: 1.0, alpha:1.00)
     let overwatchAltWhite = UIColor(red:246/255.0, green: 246/255.0, blue:246/255.0, alpha:1.00)
-    let overwatchAltDarkBlue = UIColor(red: 19/255.0, green: 42/255.0, blue: 77/255.0, alpha:0.2)
+    let overwatchAltDarkBlue = UIColor(red: 19/255.0, green: 42/255.0, blue: 77/255.0, alpha:0.85/1.0)
     
     
     @IBOutlet weak var playerName: UILabel!
@@ -35,7 +35,7 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         // Do any additional setup after loading the view.
         settings.style.buttonBarBackgroundColor = overwatchWhite
         settings.style.buttonBarItemBackgroundColor = overwatchWhite
-        settings.style.selectedBarBackgroundColor = overwatchGray
+       // settings.style.selectedBarBackgroundColor = overwatchAltDarkBlue
         settings.style.buttonBarItemFont =  UIFont(name: "futura", size: 14) ?? UIFont.systemFont(ofSize: 14)
         settings.style.selectedBarHeight = 3.0
         settings.style.buttonBarMinimumLineSpacing = 0
