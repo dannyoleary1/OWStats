@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 //References for how I learned to do this:
 //https://medium.com/michaeladeyeri/how-to-implement-android-like-tab-layouts-in-ios-using-swift-3-578516c3aa9
@@ -27,12 +28,15 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     let overwatchAltDarkBlue = UIColor(red: 19/255.0, green: 42/255.0, blue: 77/255.0, alpha:0.2)
     
     
+    @IBOutlet weak var playerName: UILabel!
+    
+    
     override func viewDidLoad() {
         // Do any additional setup after loading the view.
         settings.style.buttonBarBackgroundColor = overwatchWhite
         settings.style.buttonBarItemBackgroundColor = overwatchWhite
         settings.style.selectedBarBackgroundColor = overwatchGray
-     //   settings.style.buttonBarItemFont = .systemFont(ofSize: 11)
+        settings.style.buttonBarItemFont =  UIFont(name: "futura", size: 14) ?? UIFont.systemFont(ofSize: 14)
         settings.style.selectedBarHeight = 3.0
         settings.style.buttonBarMinimumLineSpacing = 0
      //   settings.style.buttonBarItemTitleColor = .blue //change
@@ -49,12 +53,75 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
             
         }
         
+        getUser()
+       // createUser()
         super.viewDidLoad()
+     //   getLatestStats()
+    }
+
+    func getUser(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                print(data.value(forKey: "username") as! String)
+                playerName.text = (data.value(forKey: "username") as! String)
+            }
+        } catch {
+            print ("Failed")
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func createUser(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "User", in: context)
+        let newUser = NSManagedObject(entity: entity!, insertInto: context)
+        
+        newUser.setValue("dannyo669", forKey: "username")
+        newUser.setValue("psn", forKey: "console")
+        
+        do{
+            try context.save()
+        } catch {
+            print ("Failed saving")
+        }
+    }
+    
+    /********************************************************************************
+     // This function is an asynchronous call to the api which will get back the latest
+     // information about a player in JSON Format.
+    ********************************************************************************/
+    func getLatestStats(){
+        let urlStr:String = "https://owapi.net/api/v3/u/dannyo669/blob?platform=psn"
+        var request = URLRequest(url: URL(string: urlStr)!)
+        request.httpMethod = "GET"
+        
+        let session = URLSession.shared
+        let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
+            if error == nil{
+                do{
+                    let jsonDict = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String:Any]
+                    print (jsonDict)
+                }
+                catch let error as NSError{
+                    print (error)
+                }
+            }
+            else{
+                print ("Error!")
+            }
+            
+        })
+        task.resume()
     }
     
 

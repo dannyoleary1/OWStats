@@ -14,6 +14,7 @@
 		8C309DE820A9FDE4004EA442 /* HeroStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C309DE720A9FDE4004EA442 /* HeroStatsViewController.swift */; };
 		8C309DEA20AA0760004EA442 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C309DE920AA0760004EA442 /* AchievementsViewController.swift */; };
 		8C309DEC20AA09B8004EA442 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C309DEB20AA09B8004EA442 /* LiveViewController.swift */; };
+		8C4495AA20AAFB1B00CD9C81 /* OWStats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495A820AAFB1B00CD9C81 /* OWStats.xcdatamodeld */; };
 		8CDC95A220A9B02B006E04C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC95A120A9B02B006E04C0 /* AppDelegate.swift */; };
 		8CDC95A720A9B02C006E04C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC95A520A9B02C006E04C0 /* Main.storyboard */; };
 		8CDC95A920A9B039006E04C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC95A820A9B039006E04C0 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		8C309DE720A9FDE4004EA442 /* HeroStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStatsViewController.swift; sourceTree = "<group>"; };
 		8C309DE920AA0760004EA442 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		8C309DEB20AA09B8004EA442 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		8C4495A920AAFB1B00CD9C81 /* OWStats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OWStats.xcdatamodel; sourceTree = "<group>"; };
 		8CDC959E20A9B02B006E04C0 /* OWStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDC95A120A9B02B006E04C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CDC95A620A9B02C006E04C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		8CDC959520A9B02B006E04C0 = {
 			isa = PBXGroup;
 			children = (
+				8C4495A820AAFB1B00CD9C81 /* OWStats.xcdatamodeld */,
 				8CDC95A020A9B02B006E04C0 /* OWStats */,
 				8CDC95B520A9B03A006E04C0 /* OWStatsTests */,
 				8CDC95C020A9B03A006E04C0 /* OWStatsUITests */,
@@ -393,6 +396,7 @@
 			files = (
 				8C309DEC20AA09B8004EA442 /* LiveViewController.swift in Sources */,
 				8C309DE620A9FDCB004EA442 /* PlayerStatsViewController.swift in Sources */,
+				8C4495AA20AAFB1B00CD9C81 /* OWStats.xcdatamodeld in Sources */,
 				8CDC95A220A9B02B006E04C0 /* AppDelegate.swift in Sources */,
 				8C309DE820A9FDE4004EA442 /* HeroStatsViewController.swift in Sources */,
 				8C309DE420A9F871004EA442 /* ParentViewController.swift in Sources */,
@@ -723,6 +727,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C4495A820AAFB1B00CD9C81 /* OWStats.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C4495A920AAFB1B00CD9C81 /* OWStats.xcdatamodel */,
+			);
+			currentVersion = 8C4495A920AAFB1B00CD9C81 /* OWStats.xcdatamodel */;
+			path = OWStats.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8CDC959620A9B02B006E04C0 /* Project object */;
 }
