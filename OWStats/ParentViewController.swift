@@ -52,28 +52,15 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
             oldCell?.contentView.backgroundColor = UIColor(red:1, green:1, blue:1,alpha:0.60)
             
         }
-        
-        getUser()
+        playerName.text = UserUtility.getUser()
+        PlayerStatsUtility.getPlayerStats()
        // createUser()
         super.viewDidLoad()
-     //   getLatestStats()
+    //    getLatestStats()
     }
+    
 
-    func getUser(){
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-        request.returnsObjectsAsFaults = false
-        do {
-            let result = try context.fetch(request)
-            for data in result as! [NSManagedObject] {
-                print(data.value(forKey: "username") as! String)
-                playerName.text = (data.value(forKey: "username") as! String)
-            }
-        } catch {
-            print ("Failed")
-        }
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -110,7 +97,12 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
             if error == nil{
                 do{
                     let jsonDict = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String:Any]
-                    print (jsonDict)
+                    var allData =  (jsonDict["any"]) as! [String:Any]
+                    let achievements = allData["achievements"] as! [String:Any]
+                    let playerStats = allData["stats"] as! [String:Any]
+                    AchievementsUtility.aggregateAchievements(achievements: achievements)
+                    PlayerStatsUtility.aggregatePlayerStats(playerStats: playerStats)
+                    
                 }
                 catch let error as NSError{
                     print (error)
@@ -123,6 +115,9 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         })
         task.resume()
     }
+    
+    
+
     
 
     /*

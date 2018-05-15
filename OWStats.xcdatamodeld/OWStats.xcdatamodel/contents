@@ -81,7 +81,7 @@
         <attribute name="survival_expert" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="survived_the_night" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="survivor" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="target_rich_enviroment" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="target_rich_environment" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="the_car_wash" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="the_dragon_is_sated" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="the_floor_is_lava" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
@@ -119,7 +119,6 @@
         <attribute name="rank_image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tier_image" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="ties" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="win_rate" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="wins" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
@@ -130,6 +129,6 @@
     <elements>
         <element name="User" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="Achievements" positionX="-54" positionY="-9" width="128" height="1575"/>
-        <element name="PlayerStatsComp" positionX="-36" positionY="153" width="128" height="300"/>
+        <element name="PlayerStatsComp" positionX="-36" positionY="153" width="128" height="285"/>
     </elements>
 </model>

@@ -15,6 +15,9 @@
 		8C309DEA20AA0760004EA442 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C309DE920AA0760004EA442 /* AchievementsViewController.swift */; };
 		8C309DEC20AA09B8004EA442 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C309DEB20AA09B8004EA442 /* LiveViewController.swift */; };
 		8C4495AA20AAFB1B00CD9C81 /* OWStats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495A820AAFB1B00CD9C81 /* OWStats.xcdatamodeld */; };
+		8C4495AC20AB175000CD9C81 /* AchievementsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495AB20AB175000CD9C81 /* AchievementsUtility.swift */; };
+		8C4495AE20AB1AF100CD9C81 /* UserUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495AD20AB1AF100CD9C81 /* UserUtility.swift */; };
+		8C4495B020AB1C4000CD9C81 /* PlayerStatsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495AF20AB1C4000CD9C81 /* PlayerStatsUtility.swift */; };
 		8CDC95A220A9B02B006E04C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC95A120A9B02B006E04C0 /* AppDelegate.swift */; };
 		8CDC95A720A9B02C006E04C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC95A520A9B02C006E04C0 /* Main.storyboard */; };
 		8CDC95A920A9B039006E04C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC95A820A9B039006E04C0 /* Assets.xcassets */; };
@@ -55,6 +58,9 @@
 		8C309DE920AA0760004EA442 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		8C309DEB20AA09B8004EA442 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		8C4495A920AAFB1B00CD9C81 /* OWStats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OWStats.xcdatamodel; sourceTree = "<group>"; };
+		8C4495AB20AB175000CD9C81 /* AchievementsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsUtility.swift; sourceTree = "<group>"; };
+		8C4495AD20AB1AF100CD9C81 /* UserUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUtility.swift; sourceTree = "<group>"; };
+		8C4495AF20AB1C4000CD9C81 /* PlayerStatsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsUtility.swift; sourceTree = "<group>"; };
 		8CDC959E20A9B02B006E04C0 /* OWStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDC95A120A9B02B006E04C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CDC95A620A9B02C006E04C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,6 +154,9 @@
 				8C309DE720A9FDE4004EA442 /* HeroStatsViewController.swift */,
 				8C309DE920AA0760004EA442 /* AchievementsViewController.swift */,
 				8C309DEB20AA09B8004EA442 /* LiveViewController.swift */,
+				8C4495AB20AB175000CD9C81 /* AchievementsUtility.swift */,
+				8C4495AD20AB1AF100CD9C81 /* UserUtility.swift */,
+				8C4495AF20AB1C4000CD9C81 /* PlayerStatsUtility.swift */,
 			);
 			path = OWStats;
 			sourceTree = "<group>";
@@ -394,10 +403,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4495AE20AB1AF100CD9C81 /* UserUtility.swift in Sources */,
+				8C4495B020AB1C4000CD9C81 /* PlayerStatsUtility.swift in Sources */,
 				8C309DEC20AA09B8004EA442 /* LiveViewController.swift in Sources */,
 				8C309DE620A9FDCB004EA442 /* PlayerStatsViewController.swift in Sources */,
 				8C4495AA20AAFB1B00CD9C81 /* OWStats.xcdatamodeld in Sources */,
 				8CDC95A220A9B02B006E04C0 /* AppDelegate.swift in Sources */,
+				8C4495AC20AB175000CD9C81 /* AchievementsUtility.swift in Sources */,
 				8C309DE820A9FDE4004EA442 /* HeroStatsViewController.swift in Sources */,
 				8C309DE420A9F871004EA442 /* ParentViewController.swift in Sources */,
 				8C309DEA20AA0760004EA442 /* AchievementsViewController.swift in Sources */,
