@@ -21,6 +21,7 @@
 		8C4495B220AB294E00CD9C81 /* genji-load.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C4495B120AB294D00CD9C81 /* genji-load.jpg */; };
 		8C4495B420ABBD5A00CD9C81 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495B320ABBD5900CD9C81 /* CollectionViewCell.swift */; };
 		8C4495B620AC572100CD9C81 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495B520AC572100CD9C81 /* Achievement.swift */; };
+		8C4495B820ADA91C00CD9C81 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C4495B720ADA91700CD9C81 /* refresh.png */; };
 		8CDC95A220A9B02B006E04C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC95A120A9B02B006E04C0 /* AppDelegate.swift */; };
 		8CDC95A720A9B02C006E04C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC95A520A9B02C006E04C0 /* Main.storyboard */; };
 		8CDC95A920A9B039006E04C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC95A820A9B039006E04C0 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		8C4495B120AB294D00CD9C81 /* genji-load.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "genji-load.jpg"; path = "../../../genji-load.jpg"; sourceTree = "<group>"; };
 		8C4495B320ABBD5900CD9C81 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8C4495B520AC572100CD9C81 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		8C4495B720ADA91700CD9C81 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh.png; path = ../../../refresh.png; sourceTree = "<group>"; };
 		8CDC959E20A9B02B006E04C0 /* OWStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDC95A120A9B02B006E04C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CDC95A620A9B02C006E04C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				8CDC95A120A9B02B006E04C0 /* AppDelegate.swift */,
 				8CDC95A520A9B02C006E04C0 /* Main.storyboard */,
+				8C4495B720ADA91700CD9C81 /* refresh.png */,
 				8CDC95D520A9CB9B006E04C0 /* OWLogo.png */,
 				8CDC95A820A9B039006E04C0 /* Assets.xcassets */,
 				8CDC95AA20A9B039006E04C0 /* LaunchScreen.storyboard */,
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CDC95D620A9CB9C006E04C0 /* OWLogo.png in Resources */,
+				8C4495B820ADA91C00CD9C81 /* refresh.png in Resources */,
 				8CDC95AC20A9B039006E04C0 /* LaunchScreen.storyboard in Resources */,
 				8CDC95A920A9B039006E04C0 /* Assets.xcassets in Resources */,
 				8C4495B220AB294E00CD9C81 /* genji-load.jpg in Resources */,

@@ -31,7 +31,9 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     var check = false
     @IBOutlet weak var playerName: UILabel!
 
+    @IBOutlet weak var OWLogo: UIImageView!
     
+    @IBOutlet weak var refresh: UIImageView!
     
     override func viewDidLoad() {
         print ("its here")
@@ -58,7 +60,9 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
             newCell?.label.textColor = UIColor(red:180/255.0, green: 186/255.0, blue: 200/255.0, alpha: 1.00)
             newCell?.contentView.backgroundColor = UIColor(red:19/255.0, green:42/255.0, blue: 77/255.0, alpha: 0.85)
             oldCell?.contentView.backgroundColor = UIColor(red:1, green:1, blue:1,alpha:0.60)
-            
+            self?.refresh.isUserInteractionEnabled = true
+            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self?.imageTapped))
+            self?.refresh.addGestureRecognizer(tapRecognizer)
         }
         myGroup.enter()
         
@@ -71,7 +75,9 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
        
     }
     
-
+    @objc func imageTapped(recognizer: UITapGestureRecognizer){
+        getLatestStats()
+    }
 
 
     override func didReceiveMemoryWarning() {
@@ -104,8 +110,19 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         let urlStr:String = "https://owapi.net/api/v3/u/dannyo669/blob?platform=psn"
         var request = URLRequest(url: URL(string: urlStr)!)
         request.httpMethod = "GET"
-
         let session = URLSession.shared
+        
+        /*Custom UI Indicator*/
+        let rectangle = UIView(frame: CGRect(x:0, y:0, width: 200, height:100))
+        rectangle.center = view.center
+        rectangle.backgroundColor = UIColor(red: 19/255.0, green: 42/255.0, blue: 77/255.0, alpha: 1.0)
+        rectangle.alpha = 0.5
+        view.addSubview(rectangle)
+        
+        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        indicator.center = view.center
+        view.addSubview(indicator)
+        indicator.startAnimating()
         let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
             DispatchQueue.main.async {
                 
@@ -123,8 +140,12 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
                         AchievementsUtility.aggregateAchievements(achievements: achievements)
                         PlayerStatsUtility.aggregatePlayerStats(playerStats: playerStats)
                         self.check=true
-                       
+                        //update view
+                        indicator.stopAnimating()
+                        rectangle.isHidden = true
                     }
+                        
+                        
                         
                     catch let error as NSError{
                         print (error)
@@ -134,6 +155,10 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
             
                 else{
                     print ("Error!")
+                    DispatchQueue.main.async{
+                        indicator.stopAnimating()
+                        rectangle.isHidden = true
+                    }
                 }
             }
                 
