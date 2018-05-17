@@ -12,12 +12,13 @@ import XLPagerTabStrip
 class HeroStatsViewController: UIViewController, IndicatorInfoProvider, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    let dataSet = HeroStatsUtility.getHeroStats()
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return (dataSet?.count)!
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCellHero", for: indexPath) as! CollectionViewCellHero
@@ -26,7 +27,8 @@ class HeroStatsViewController: UIViewController, IndicatorInfoProvider, UICollec
             if (indexPath.row == 0){
                 cell.backgroundColor = UIColor(red: 19/255.0, green: 42/255.0, blue: 77/255.0, alpha: 1.0)
             }
-        let imageURLString = "https://www.overbuff.com/assets/images/heroes/genji.png?v=bfbf2fb"
+            var currentEnt = dataSet![indexPath.row]
+        let imageURLString = currentEnt.imageUrl!
             let url = URL(string: imageURLString)
             let data = try Data(contentsOf: url!)
             let image = UIImage(data: data)
@@ -45,6 +47,16 @@ class HeroStatsViewController: UIViewController, IndicatorInfoProvider, UICollec
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool){
+        let data = HeroStatsUtility.getHeroStats()
+        for (entry) in data!{
+            print (entry.heroName!)
+        }
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -136,9 +136,11 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
                         var allData =  (jsonDict["any"]) as! [String:Any]
                         let achievements = allData["achievements"] as! [String:Any]
                         let playerStats = allData["stats"] as! [String:Any]
+                        let heroStats = allData["heroes"] as! [String:Any]
                         print (allData)
                         AchievementsUtility.aggregateAchievements(achievements: achievements)
                         PlayerStatsUtility.aggregatePlayerStats(playerStats: playerStats)
+                        HeroStatsUtility.aggregateHeroStats(heroStats: heroStats)
                         self.check=true
                         //update view
                         indicator.stopAnimating()

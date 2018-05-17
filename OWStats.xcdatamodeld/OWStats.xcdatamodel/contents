@@ -104,6 +104,15 @@
         <attribute name="world_traveler" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="yeti_catcher" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="HeroStats" representedClassName="HeroStats" syncable="YES" codeGenerationType="class">
+        <attribute name="deaths" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eliminations" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eliminations_per_life" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="heroName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kill_streak_best" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="time_played" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="PlayerStatsComp" representedClassName="PlayerStatsComp" syncable="YES" codeGenerationType="class">
         <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="comprank" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -130,5 +139,6 @@
         <element name="User" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="Achievements" positionX="-54" positionY="-9" width="128" height="1575"/>
         <element name="PlayerStatsComp" positionX="-36" positionY="153" width="128" height="285"/>
+        <element name="HeroStats" positionX="-18" positionY="162" width="128" height="150"/>
     </elements>
 </model>
