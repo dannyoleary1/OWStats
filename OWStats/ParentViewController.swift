@@ -27,11 +27,19 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     let overwatchAltWhite = UIColor(red:246/255.0, green: 246/255.0, blue:246/255.0, alpha:1.00)
     let overwatchAltDarkBlue = UIColor(red: 19/255.0, green: 42/255.0, blue: 77/255.0, alpha:0.85/1.0)
     
-    
+    let myGroup = DispatchGroup()
+    var check = false
     @IBOutlet weak var playerName: UILabel!
+
     
     
     override func viewDidLoad() {
+        print ("its here")
+        getLatestStats()
+        super.viewDidLoad()
+
+        
+     //   super.viewDidLoad()
         // Do any additional setup after loading the view.
         settings.style.buttonBarBackgroundColor = overwatchWhite
         settings.style.buttonBarItemBackgroundColor = overwatchWhite
@@ -52,11 +60,15 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
             oldCell?.contentView.backgroundColor = UIColor(red:1, green:1, blue:1,alpha:0.60)
             
         }
+        myGroup.enter()
+        
+        
         playerName.text = UserUtility.getUser()
-        PlayerStatsUtility.getPlayerStats()
+      //  PlayerStatsUtility.getPlayerStats()
        // createUser()
-        super.viewDidLoad()
-    //    getLatestStats()
+        
+        
+       
     }
     
 
@@ -88,32 +100,48 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
      // information about a player in JSON Format.
     ********************************************************************************/
     func getLatestStats(){
+        print ("it here tho")
         let urlStr:String = "https://owapi.net/api/v3/u/dannyo669/blob?platform=psn"
         var request = URLRequest(url: URL(string: urlStr)!)
         request.httpMethod = "GET"
-        
+
         let session = URLSession.shared
         let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
-            if error == nil{
-                do{
-                    let jsonDict = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String:Any]
-                    var allData =  (jsonDict["any"]) as! [String:Any]
-                    let achievements = allData["achievements"] as! [String:Any]
-                    let playerStats = allData["stats"] as! [String:Any]
-                    AchievementsUtility.aggregateAchievements(achievements: achievements)
-                    PlayerStatsUtility.aggregatePlayerStats(playerStats: playerStats)
-                    
-                }
-                catch let error as NSError{
-                    print (error)
-                }
-            }
-            else{
-                print ("Error!")
-            }
+            DispatchQueue.main.async {
+                
             
+                if error == nil{
+                    do{
+                      
+                        print ("INDO")
+                        let jsonDict = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String:Any]
+                        print (jsonDict)
+                        var allData =  (jsonDict["any"]) as! [String:Any]
+                        let achievements = allData["achievements"] as! [String:Any]
+                        let playerStats = allData["stats"] as! [String:Any]
+                        print (allData)
+                        AchievementsUtility.aggregateAchievements(achievements: achievements)
+                        PlayerStatsUtility.aggregatePlayerStats(playerStats: playerStats)
+                        self.check=true
+                       
+                    }
+                        
+                    catch let error as NSError{
+                        print (error)
+                        
+                    }
+                }
+            
+                else{
+                    print ("Error!")
+                }
+            }
+                
         })
+        print ("at task")
         task.resume()
+
+        
     }
     
     
@@ -131,11 +159,16 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     */
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        let player = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PlayerStats")
+        
+        
+       
         let hero = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HeroStats")
         let achievements = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Achievements")
         let live = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Live")
+         let player = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PlayerStats")
+       
         return [player, hero, achievements, live]
+        
     }
 
 }

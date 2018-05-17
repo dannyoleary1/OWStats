@@ -22,6 +22,7 @@ class PlayerStatsUtility{
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request)
+            print (result)
             for data in result as! [NSManagedObject] {
                 return data
             }

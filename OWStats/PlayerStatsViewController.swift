@@ -26,13 +26,14 @@ class PlayerStatsViewController: UIViewController, IndicatorInfoProvider {
     @IBOutlet weak var winRateValue: UILabel!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         skillChart.backgroundColor = UIColor(red:19/255.0, green:42/255.0, blue:77/255.0, alpha:1.0)
         levelChart.backgroundColor = UIColor(red:19/255.0, green:42/255.0, blue:77/255.0, alpha:1.0)
-        super.viewDidLoad()
-        let data = PlayerStatsUtility.getPlayerStats()
-        skillChartUpdate(data: data!)
-        levelChartUpdate(data: data!)
-        useData(data: data!)
+        
+        
+       
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -42,6 +43,15 @@ class PlayerStatsViewController: UIViewController, IndicatorInfoProvider {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool){
+        let data = PlayerStatsUtility.getPlayerStats()
+        if (data != nil){
+            skillChartUpdate(data: data!)
+            levelChartUpdate(data: data!)
+            useData(data: data!) 
+        }
+        
+           }
 
     /*
     // MARK: - Navigation

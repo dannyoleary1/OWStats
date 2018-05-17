@@ -16,6 +16,23 @@ class LiveViewController: UIViewController, IndicatorInfoProvider {
     @IBOutlet weak var webPlayer: WKWebView!
     
     override func viewDidLoad() {
+        let interactiveEmbedCode = """
+        <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+        <div id="player"></div>
+        <script type="text/javascript">
+        var options = {
+        width: "950",
+        height: "900",
+        channel: "overwatchleague"
+        };
+        var player = new Twitch.Player("player", options);
+        player.setVolume(0.5);
+        </script>
+        """
+        print("itloads?")
+        
+        webPlayer.loadHTMLString(interactiveEmbedCode, baseURL: nil)
+        print (webPlayer)
         super.viewDidLoad()
 //        let interactiveEmbedCode = """
 //        <div id="player"></div>
@@ -30,24 +47,7 @@ class LiveViewController: UIViewController, IndicatorInfoProvider {
 //        player.setVolume(0.5);
 //        </script>
 //        """
-        let interactiveEmbedCode = """
-        <div id="player"></div>
-        <script type="text/javascript">
-        var options = {
-        width: "1280",
-        height: "720",
-        channel: "dallas",
-        video: "v106400740",
-        "playsinline": "true"
-        };
-        var player = new Twitch.Player("player", options);
-        player.setVolume(0.5);
-        </script>
-        """
-        print("itloads?")
-        
-        webPlayer.loadHTMLString(interactiveEmbedCode, baseURL: nil)
-        print (webPlayer)
+       
         // Do any additional setup after loading the view.
     }
 
