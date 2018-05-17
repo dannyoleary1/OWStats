@@ -12,10 +12,12 @@ import XLPagerTabStrip
 class HeroStatsViewController: UIViewController, IndicatorInfoProvider, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    let dataSet = HeroStatsUtility.getHeroStats()
+    var dataSet = HeroStatsUtility.getHeroStats()
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        dataSet = HeroStatsUtility.getHeroStats()
+        print (dataSet?.count)
         return (dataSet?.count)!
     }
     
@@ -32,7 +34,13 @@ class HeroStatsViewController: UIViewController, IndicatorInfoProvider, UICollec
             let url = URL(string: imageURLString)
             let data = try Data(contentsOf: url!)
             let image = UIImage(data: data)
-            cell.displayContent(image: image!, statOne: "test", statTwo: "test", statThree: "test", statFour: "test", statFive: "test")
+            let statOne =  "Hours: " + String(format: "%.2f", currentEnt.time_played!)
+            let statTwo = "K/D: " + String(format: "%.2f", currentEnt.eliminations_per_life!)
+            let statThree = "Kills: " + String(currentEnt.eliminations!)
+            let statFour = "Deaths: " + String(currentEnt.deaths!)
+            let statFive = "Streak: " + String(currentEnt.kill_streak_best!)
+            
+            cell.displayContent(image: image!, statOne: statOne, statTwo: statTwo, statThree: statThree, statFour: statFour, statFive: statFive)
 
         }
         catch{
@@ -50,10 +58,8 @@ class HeroStatsViewController: UIViewController, IndicatorInfoProvider, UICollec
     
     
     override func viewDidAppear(_ animated: Bool){
-        let data = HeroStatsUtility.getHeroStats()
-        for (entry) in data!{
-            print (entry.heroName!)
-        }
+        dataSet = HeroStatsUtility.getHeroStats()
+        collectionView.reloadData()
         
     }
 

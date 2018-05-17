@@ -34,7 +34,7 @@ class HeroStatsUtility{
             print (result.count)
             for data in result as! [NSManagedObject]{
                 heroArray.append(Hero(heroName: data.value(forKey: "heroName") as! String, deaths: data.value(forKey: "deaths") as! Int, eliminations: data.value(forKey: "eliminations") as! Int, eliminations_per_life: data.value(forKey: "eliminations_per_life") as! Float, imageUrl: data.value(forKey: "imageUrl") as! String, kill_streak_best: data.value(forKey: "kill_streak_best") as! Int, time_played: data.value(forKey: "time_played") as! Float))
-
+                print (data.value(forKey: "eliminations") as! Float)
             }
             return heroArray
         } catch {
@@ -71,13 +71,13 @@ class HeroStatsUtility{
                     var genStats = compGenStats[key] as! [String:Any]
                     var newStats = genStats["general_stats"] as! [String:Any]
                     for (currentKey, currentValue) in newStats{
-                        if (wantedInfo.contains(key)){
+                        if (wantedInfo.contains(currentKey)){
                             newHero.setValue(currentValue, forKey: currentKey)
                         }
                     }
                     do{
                         try context.save()
-                        break
+                        
                     } catch{
                         print ("Failed Saving")
                     }
@@ -91,7 +91,7 @@ class HeroStatsUtility{
                         var genStats = compGenStats[key] as! [String:Any]
                         var newStats = genStats["general_stats"] as! [String:Any]
                         for (currentKey, currentValue) in newStats{
-                            if (wantedInfo.contains(key)){
+                            if (wantedInfo.contains(currentKey)){
                             result![currentNo].setValue(currentValue, forKey: currentKey)
                             }
                         }

@@ -20,6 +20,29 @@ class UserUtility{
         do {
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject] {
+                if result.count == 0{
+                    let entity = NSEntityDescription.entity(forEntityName: "User", in: context)
+                    let newUser = NSManagedObject(entity: entity!, insertInto: context)
+                    do{
+                        let result = try context.fetch(request) as? [NSManagedObject]
+                        print(result?.count)
+                        if result?.count != 1{
+                            newUser.setValue("dannyo669", forKey: "username")
+                            newUser.setValue("psn", forKey: "console")
+                            do{
+                                try context.save()
+                            } catch {
+                                print ("Failed saving")
+                            }
+                        }
+                        return  (data.value(forKey: "username") as! String)
+                    
+                    }
+                    catch{
+                        print ("Error")
+                    }
+                }
+                print (data)
                 return (data.value(forKey: "username") as! String)
                // playerName.text = (data.value(forKey: "username") as! String)
             }

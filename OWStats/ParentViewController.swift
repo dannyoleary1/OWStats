@@ -38,10 +38,8 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     override func viewDidLoad() {
         print ("its here")
         getLatestStats()
+        createUser()
         super.viewDidLoad()
-
-        
-     //   super.viewDidLoad()
         // Do any additional setup after loading the view.
         settings.style.buttonBarBackgroundColor = overwatchWhite
         settings.style.buttonBarItemBackgroundColor = overwatchWhite
@@ -70,9 +68,6 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         playerName.text = UserUtility.getUser()
       //  PlayerStatsUtility.getPlayerStats()
        // createUser()
-        
-        
-       
     }
     
     @objc func imageTapped(recognizer: UITapGestureRecognizer){
@@ -88,16 +83,24 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     func createUser(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
         let entity = NSEntityDescription.entity(forEntityName: "User", in: context)
         let newUser = NSManagedObject(entity: entity!, insertInto: context)
-        
-        newUser.setValue("dannyo669", forKey: "username")
-        newUser.setValue("psn", forKey: "console")
-        
         do{
-            try context.save()
-        } catch {
-            print ("Failed saving")
+        let result = try context.fetch(request) as? [NSManagedObject]
+            print(result?.count)
+        if result?.count != 1{
+            newUser.setValue("dannyo669", forKey: "username")
+            newUser.setValue("psn", forKey: "console")
+            do{
+                try context.save()
+            } catch {
+                print ("Failed saving")
+            }
+        }
+        }
+        catch{
+            print ("Error")
         }
     }
     
