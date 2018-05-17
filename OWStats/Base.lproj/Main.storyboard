@@ -576,7 +576,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="j2r-ZQ-UX5">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCellHero" id="j2r-ZQ-UX5" customClass="CollectionViewCellHero" customModule="OWStats" customModuleProvider="target">
                                         <rect key="frame" x="12.5" y="0.0" width="350" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -592,19 +592,20 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFe-bv-8kp">
                                                                     <rect key="frame" x="0.0" y="0.0" width="334" height="92"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VfS-DN-wV1">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VfS-DN-wV1">
                                                                             <rect key="frame" x="0.0" y="0.0" width="67" height="92"/>
+                                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NU-07-bxx">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9NU-07-bxx">
                                                                             <rect key="frame" x="67" y="0.0" width="133.5" height="92"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
+                                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                                                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqc-hT-Tfk">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lqc-hT-Tfk">
                                                                             <rect key="frame" x="200.5" y="0.0" width="133.5" height="92"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
+                                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                                                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
@@ -613,13 +614,33 @@
                                                                         <constraint firstItem="9NU-07-bxx" firstAttribute="width" secondItem="VfS-DN-wV1" secondAttribute="width" multiplier="2" id="ujv-Rc-zSI"/>
                                                                     </constraints>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQf-aZ-8nD">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fQf-aZ-8nD">
                                                                     <rect key="frame" x="0.0" y="92" width="334" height="92"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4bI-Uo-xDV">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="111.5" height="92"/>
+                                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                                                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="u0Q-N7-uWm">
+                                                                            <rect key="frame" x="111.5" y="0.0" width="111" height="92"/>
+                                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                                                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="q4O-h1-fu4">
+                                                                            <rect key="frame" x="222.5" y="0.0" width="111.5" height="92"/>
+                                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                                                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
                                                                 </stackView>
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.06828666478395462" green="0.14995720982551575" blue="0.27090340852737427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.074509803921568626" green="0.16470588235294117" blue="0.30196078431372547" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="Ifd-ND-PQ8" secondAttribute="bottom" id="0zf-2A-61d"/>
                                                         <constraint firstItem="Ifd-ND-PQ8" firstAttribute="leading" secondItem="iP2-v0-Qc7" secondAttribute="leading" id="NKc-qf-C3z"/>
@@ -635,8 +656,19 @@
                                             <constraint firstAttribute="bottomMargin" secondItem="iP2-v0-Qc7" secondAttribute="bottom" id="kKp-kF-RLt"/>
                                             <constraint firstItem="iP2-v0-Qc7" firstAttribute="leading" secondItem="j2r-ZQ-UX5" secondAttribute="leadingMargin" id="rtc-uh-YOh"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="heroImage" destination="VfS-DN-wV1" id="A8G-jA-ZLr"/>
+                                            <outlet property="heroStatFive" destination="q4O-h1-fu4" id="1S0-cd-t3k"/>
+                                            <outlet property="heroStatFour" destination="u0Q-N7-uWm" id="zrj-iW-OsH"/>
+                                            <outlet property="heroStatOne" destination="9NU-07-bxx" id="KgB-NL-UUV"/>
+                                            <outlet property="heroStatThree" destination="4bI-Uo-xDV" id="UxO-9d-onO"/>
+                                            <outlet property="heroStatTwo" destination="lqc-hT-Tfk" id="7SJ-2l-x2v"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="huX-cg-2NW" id="eUW-NK-i3V"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -648,6 +680,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dDe-tA-caM"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="dC6-hT-a5y" id="qRt-Lw-JXM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nha-Gf-XFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
