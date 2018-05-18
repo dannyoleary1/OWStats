@@ -42,7 +42,10 @@ class UserUtility{
                         print ("Error")
                     }
                 }
-                print (data)
+                if (data.value(forKey:"username") as! String == nil){
+                    (result[0] as AnyObject).setValue("dannyo669", forKey: "username")
+                    (result[0] as AnyObject).setValue("psn", forKey: "console")
+                }
                 return (data.value(forKey: "username") as! String)
                // playerName.text = (data.value(forKey: "username") as! String)
             }

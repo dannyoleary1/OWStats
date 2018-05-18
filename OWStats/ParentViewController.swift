@@ -38,7 +38,6 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     override func viewDidLoad() {
         print ("its here")
         getLatestStats()
-        createUser()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         settings.style.buttonBarBackgroundColor = overwatchWhite
@@ -65,7 +64,7 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         myGroup.enter()
         
         
-        playerName.text = UserUtility.getUser()
+        playerName.text = "dannyo669"
       //  PlayerStatsUtility.getPlayerStats()
        // createUser()
     }
