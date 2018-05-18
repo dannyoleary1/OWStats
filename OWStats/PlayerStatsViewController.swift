@@ -29,12 +29,6 @@ class PlayerStatsViewController: UIViewController, IndicatorInfoProvider {
         super.viewDidLoad()
         skillChart.backgroundColor = UIColor(red:19/255.0, green:42/255.0, blue:77/255.0, alpha:1.0)
         levelChart.backgroundColor = UIColor(red:19/255.0, green:42/255.0, blue:77/255.0, alpha:1.0)
-        
-        
-       
-        
-        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -43,6 +37,9 @@ class PlayerStatsViewController: UIViewController, IndicatorInfoProvider {
         // Dispose of any resources that can be recreated.
     }
     
+    /*
+     Errors if not done here. Seems to load before async task finishes,
+    */
     override func viewDidAppear(_ animated: Bool){
         let data = PlayerStatsUtility.getPlayerStats()
         if (data != nil){
@@ -63,11 +60,17 @@ class PlayerStatsViewController: UIViewController, IndicatorInfoProvider {
     }
     */
 
+    /*
+     Gives back the indicator for the XLPagerTabStrip
+     */
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         //storyboardID goes here.
         return IndicatorInfo(title: "PlayerStats")
     }
     
+    /*
+     Displays the data from Core Data
+     */
     func useData(data: NSManagedObject){
         gamesValue.text = String(data.value(forKey: "games") as! Float)
         winsValue.text = String(data.value(forKey: "wins") as! Float)
@@ -77,6 +80,9 @@ class PlayerStatsViewController: UIViewController, IndicatorInfoProvider {
         winRateValue.text = String(data.value(forKey: "win_rate") as! Float)+"%"
     }
     
+    /*
+     //reference: https://github.com/annalizhaz/ChartsForSwiftBasic
+     */
     func skillChartUpdate(data: NSManagedObject){
         var entryValue = (data.value(forKey: "comprank") as! Float)
         var remainingValue = entryValue.remainder(dividingBy: 100)

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2D88BDC5E3F9FC8B99BAA42F /* Pods_OWStatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC4C58E68C0E3FFB650082F /* Pods_OWStatsUITests.framework */; };
 		5A0CC4CB7B705DE6939AE2EE /* Pods_OWStatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F321371B55AA5D6FFD286AB /* Pods_OWStatsTests.framework */; };
+		84E2169720AEFABD00F20E2E /* genji_redux_by_nocluse-db89dmr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84E2169620AEFABD00F20E2E /* genji_redux_by_nocluse-db89dmr.jpg */; };
+		84E2169F20AEFDB900F20E2E /* OWLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E2169E20AEFDB900F20E2E /* OWLogo.png */; };
+		84E216A320AEFEDB00F20E2E /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E216A220AEFEDA00F20E2E /* refresh.png */; };
 		8C309DE420A9F871004EA442 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C309DE320A9F870004EA442 /* ParentViewController.swift */; };
 		8C309DE620A9FDCB004EA442 /* PlayerStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C309DE520A9FDCB004EA442 /* PlayerStatsViewController.swift */; };
 		8C309DE820A9FDE4004EA442 /* HeroStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C309DE720A9FDE4004EA442 /* HeroStatsViewController.swift */; };
@@ -18,10 +21,8 @@
 		8C4495AC20AB175000CD9C81 /* AchievementsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495AB20AB175000CD9C81 /* AchievementsUtility.swift */; };
 		8C4495AE20AB1AF100CD9C81 /* UserUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495AD20AB1AF100CD9C81 /* UserUtility.swift */; };
 		8C4495B020AB1C4000CD9C81 /* PlayerStatsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495AF20AB1C4000CD9C81 /* PlayerStatsUtility.swift */; };
-		8C4495B220AB294E00CD9C81 /* genji-load.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C4495B120AB294D00CD9C81 /* genji-load.jpg */; };
 		8C4495B420ABBD5A00CD9C81 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495B320ABBD5900CD9C81 /* CollectionViewCell.swift */; };
 		8C4495B620AC572100CD9C81 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495B520AC572100CD9C81 /* Achievement.swift */; };
-		8C4495B820ADA91C00CD9C81 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C4495B720ADA91700CD9C81 /* refresh.png */; };
 		8C4495BA20ADB01D00CD9C81 /* CollectionViewCellHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495B920ADB01D00CD9C81 /* CollectionViewCellHero.swift */; };
 		8C4495BC20ADD4C100CD9C81 /* HeroStatsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4495BB20ADD4C100CD9C81 /* HeroStatsUtility.swift */; };
 		8CDC95A220A9B02B006E04C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC95A120A9B02B006E04C0 /* AppDelegate.swift */; };
@@ -30,7 +31,6 @@
 		8CDC95AC20A9B039006E04C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC95AA20A9B039006E04C0 /* LaunchScreen.storyboard */; };
 		8CDC95B720A9B03A006E04C0 /* OWStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC95B620A9B03A006E04C0 /* OWStatsTests.swift */; };
 		8CDC95C220A9B03A006E04C0 /* OWStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC95C120A9B03A006E04C0 /* OWStatsUITests.swift */; };
-		8CDC95D620A9CB9C006E04C0 /* OWLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC95D520A9CB9B006E04C0 /* OWLogo.png */; };
 		FDCC7DD7CC3CCC73978CB1BE /* Pods_OWStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22EFB7335F9415DE8C92898 /* Pods_OWStats.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +57,9 @@
 		4A670B2F85164EA801CC6731 /* Pods-OWStatsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWStatsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OWStatsUITests/Pods-OWStatsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		663B080A72EB3B462FB346DB /* Pods-OWStatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWStatsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OWStatsTests/Pods-OWStatsTests.release.xcconfig"; sourceTree = "<group>"; };
 		6F321371B55AA5D6FFD286AB /* Pods_OWStatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OWStatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E2169620AEFABD00F20E2E /* genji_redux_by_nocluse-db89dmr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "genji_redux_by_nocluse-db89dmr.jpg"; path = "../../../Downloads/genji_redux_by_nocluse-db89dmr.jpg"; sourceTree = "<group>"; };
+		84E2169E20AEFDB900F20E2E /* OWLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OWLogo.png; path = ../../../Documents/OWLogo.png; sourceTree = "<group>"; };
+		84E216A220AEFEDA00F20E2E /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh.png; path = ../../../Documents/refresh.png; sourceTree = "<group>"; };
 		892BB0F8EC48B0A0C60AC89C /* Pods-OWStatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWStatsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OWStatsUITests/Pods-OWStatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C309DE320A9F870004EA442 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		8C309DE520A9FDCB004EA442 /* PlayerStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsViewController.swift; sourceTree = "<group>"; };
@@ -67,10 +70,8 @@
 		8C4495AB20AB175000CD9C81 /* AchievementsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsUtility.swift; sourceTree = "<group>"; };
 		8C4495AD20AB1AF100CD9C81 /* UserUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUtility.swift; sourceTree = "<group>"; };
 		8C4495AF20AB1C4000CD9C81 /* PlayerStatsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsUtility.swift; sourceTree = "<group>"; };
-		8C4495B120AB294D00CD9C81 /* genji-load.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "genji-load.jpg"; path = "../../../genji-load.jpg"; sourceTree = "<group>"; };
 		8C4495B320ABBD5900CD9C81 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8C4495B520AC572100CD9C81 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
-		8C4495B720ADA91700CD9C81 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh.png; path = ../../../refresh.png; sourceTree = "<group>"; };
 		8C4495B920ADB01D00CD9C81 /* CollectionViewCellHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellHero.swift; sourceTree = "<group>"; };
 		8C4495BB20ADD4C100CD9C81 /* HeroStatsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStatsUtility.swift; sourceTree = "<group>"; };
 		8CDC959E20A9B02B006E04C0 /* OWStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +86,6 @@
 		8CDC95BD20A9B03A006E04C0 /* OWStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OWStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDC95C120A9B03A006E04C0 /* OWStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWStatsUITests.swift; sourceTree = "<group>"; };
 		8CDC95C320A9B03A006E04C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CDC95D520A9CB9B006E04C0 /* OWLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OWLogo.png; path = ../../../OWLogo.png; sourceTree = "<group>"; };
 		B6FEEBC9FC4FCA9EF7394F92 /* Pods-OWStats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWStats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OWStats/Pods-OWStats.debug.xcconfig"; sourceTree = "<group>"; };
 		C22EFB7335F9415DE8C92898 /* Pods_OWStats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OWStats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0FF8EABBA2981FDE434A43 /* Pods-OWStatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWStatsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OWStatsTests/Pods-OWStatsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,13 +155,13 @@
 		8CDC95A020A9B02B006E04C0 /* OWStats */ = {
 			isa = PBXGroup;
 			children = (
+				84E216A220AEFEDA00F20E2E /* refresh.png */,
+				84E2169E20AEFDB900F20E2E /* OWLogo.png */,
+				84E2169620AEFABD00F20E2E /* genji_redux_by_nocluse-db89dmr.jpg */,
 				8CDC95A120A9B02B006E04C0 /* AppDelegate.swift */,
 				8CDC95A520A9B02C006E04C0 /* Main.storyboard */,
-				8C4495B720ADA91700CD9C81 /* refresh.png */,
-				8CDC95D520A9CB9B006E04C0 /* OWLogo.png */,
 				8CDC95A820A9B039006E04C0 /* Assets.xcassets */,
 				8CDC95AA20A9B039006E04C0 /* LaunchScreen.storyboard */,
-				8C4495B120AB294D00CD9C81 /* genji-load.jpg */,
 				8CDC95AD20A9B039006E04C0 /* Info.plist */,
 				8C309DE320A9F870004EA442 /* ParentViewController.swift */,
 				8C309DE520A9FDCB004EA442 /* PlayerStatsViewController.swift */,
@@ -318,11 +318,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CDC95D620A9CB9C006E04C0 /* OWLogo.png in Resources */,
-				8C4495B820ADA91C00CD9C81 /* refresh.png in Resources */,
+				84E2169720AEFABD00F20E2E /* genji_redux_by_nocluse-db89dmr.jpg in Resources */,
+				84E216A320AEFEDB00F20E2E /* refresh.png in Resources */,
 				8CDC95AC20A9B039006E04C0 /* LaunchScreen.storyboard in Resources */,
 				8CDC95A920A9B039006E04C0 /* Assets.xcassets in Resources */,
-				8C4495B220AB294E00CD9C81 /* genji-load.jpg in Resources */,
+				84E2169F20AEFDB900F20E2E /* OWLogo.png in Resources */,
 				8CDC95A720A9B02C006E04C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,7 +612,9 @@
 			baseConfigurationReference = B6FEEBC9FC4FCA9EF7394F92 /* Pods-OWStats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OWStats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -620,6 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OWStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -630,7 +633,9 @@
 			baseConfigurationReference = 13BF2BD61C35E568CB0EFC99 /* Pods-OWStats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OWStats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -638,6 +643,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OWStats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

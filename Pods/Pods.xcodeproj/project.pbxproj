@@ -33,6 +33,7 @@
 		2886AB5EEBEB31E87420ABCCEC2B1762 /* Charts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECC25E11F3CB13DED180E0819058B8 /* Charts-dummy.m */; };
 		2C00EEEB878E3AFF833FB4265139E751 /* CandleChartDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA06515589BAA93D712B21B69AA5398 /* CandleChartDataEntry.swift */; };
 		2E77D12FF73D2CDC3FC900187D365C66 /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DDE96EBF97A3E656FCF26C4B121910 /* PieChartData.swift */; };
+		2E9077DCB4BD6AEC1D91ECFD675333F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		31F0D5BC7B463EFE9735CE9C992B146E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA349EF77E8B432B2CE7426985B8B251 /* Animator.swift */; };
 		334B19BE6F150C629E49D3E2291D4117 /* DefaultFillFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2069DB00C44B8992D846606F6B3F68 /* DefaultFillFormatter.swift */; };
 		358768F88E772F4647ABC89090218A1F /* CombinedChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4C50E257E4A3F32AF53710846AAE /* CombinedChartData.swift */; };
@@ -56,13 +57,13 @@
 		4D16399E42DACB783BD832909B66F673 /* CandleChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829586BC2A4B98A62DF7F50EB8ADF1E1 /* CandleChartData.swift */; };
 		510E4C97F40677A248DF595EF41D1013 /* IMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D2BEDC9A4AFA8E743563F9FC472E9 /* IMarker.swift */; };
 		5169BB2BF939EA8554733FD61C19CB67 /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B6314E2C28AA59E78BBA13EBAA65E /* TwitterPagerTabStripViewController.swift */; };
+		52CDD6E57DE1E403687737A57717C361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		541ACC8E434F35204868338AED4A3E18 /* BarLineChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CA768236FB6516700724824C7E3C6 /* BarLineChartViewBase.swift */; };
 		560C8F3AD5B3809D0148B2BB80C987F5 /* ScatterChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF336766336DCA5AE6CC3B48EC81470 /* ScatterChartDataProvider.swift */; };
 		575EDB8DA96849B05B2D90CBBC6E7F37 /* Charts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8B60EFDF805E9EA5A54445FA7BE716 /* Charts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5857B07B67A8752924C22368C45E436C /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B15F2EC0287EA158E16DF1312A9D68F /* Renderer.swift */; };
 		588A08E833807CA98CB0EE4B8FFD5F10 /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BC092515E15E39735E083A05CA1320 /* SegmentedPagerTabStripViewController.swift */; };
 		5999686690433BB847D0FCE630172471 /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993B66CF3741101EF5BD5FD0DD98FE7 /* ButtonBarViewCell.swift */; };
-		5A41F9245B9BA033D60F08919B131ACF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		5C66D4BED1B4572FB65745EE045961DA /* CircleShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63A365D83351B808C5026C80B0CA71 /* CircleShapeRenderer.swift */; };
 		5CF666D94A00EB9897A2A75EBA0A1A77 /* LineScatterCandleRadarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DAB2EE8019DB91A71D62C3C771CC8 /* LineScatterCandleRadarChartDataSet.swift */; };
 		5D1756710EA899736AEA98FB3721E7A0 /* IFillFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D759DFF89024F5EE25B7291DF1D09F /* IFillFormatter.swift */; };
@@ -77,7 +78,6 @@
 		6825F987487EDF06F4D24299C38983E4 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24A2F566AA0B9F32751030383E8F05 /* Transformer.swift */; };
 		69E81189486A414318D77B812FE5BD11 /* DefaultAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE69145579B7D72ACBB1EA44E1E3D3 /* DefaultAxisValueFormatter.swift */; };
 		6C679C3A31EDFD86CA769C0213F0266D /* XAxisRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD200A26C932971488CA6FF87DAA1D8 /* XAxisRenderer.swift */; };
-		6F859EF00F7D4E4F10030B65B72EC773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		6FC5B0E0F56612457D2A08E5372B2265 /* BarLineScatterCandleBubbleChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C24641215CB58E0DB2150C58ED6E4 /* BarLineScatterCandleBubbleChartData.swift */; };
 		7266DEDA85346EA9E01DD661C1C1AA17 /* BarLineScatterCandleBubbleChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAB8955DDAE39A904B0064EFBFB162 /* BarLineScatterCandleBubbleChartDataProvider.swift */; };
 		736EF63B2F314148AB46F2AE5D935C59 /* AxisRendererBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BA50F5E3505019D6CDE72DAB68EEF5 /* AxisRendererBase.swift */; };
@@ -88,13 +88,15 @@
 		7542D705B7B04A2DA07060CD7836EE82 /* CandleChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB357B3E4E9BA0D5DA189DE5BE4CB322 /* CandleChartDataProvider.swift */; };
 		7548ACB434594E231EFE5D75A5D96CCF /* LineChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F327E42CCD761597EDD4BFD866D25AD /* LineChartDataSet.swift */; };
 		7596C4EC49FA537B84FB3C63F3890188 /* LineRadarRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A9B8A8E78725D74083DC36E2B18DF6 /* LineRadarRenderer.swift */; };
+		787D3217D515A58149D325EA8428BEE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		78E9166215F02F3FA8A5E2923C86E2E8 /* ChartBaseDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73B1676D96C43F4911459513C944368 /* ChartBaseDataSet.swift */; };
 		7E4271876298C299BE9C94B0620F4D18 /* BubbleChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A3088889DA240A3879E424FFB5A30F /* BubbleChartDataProvider.swift */; };
-		7F019AA1B9A9D518B050C3811B780F31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		805C26328E942629D7243E5059372CF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		806564C05DA4E1954384AE79FFDAFAE6 /* RadarHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E0347B210EC083647569B8ACDE8055 /* RadarHighlighter.swift */; };
 		82450FE97CC093924C5AB00A669DC28D /* Pods-OWStatsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 579D4FCDEDC5B220344258CC28FF8F29 /* Pods-OWStatsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84F6C2AE22E91CDFD15126459FA50EEB /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA6165176502BF5E761066C4548382 /* PagerTabStripViewController.swift */; };
 		86492D003584407BF5EA438D0A5F489C /* ViewPortJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E32D36B01455C94B9DF1BF0AFAC75 /* ViewPortJob.swift */; };
+		884A64DF6FF6F0BF11C83455C912AE22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		8992239AF1272804CEE86F780052CF62 /* DataApproximator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107859C892E7AFE9D62E9853223D668 /* DataApproximator.swift */; };
 		8ADFCF439175758C2215EC7FD6E96100 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 628A543815CA756C64187A70805057D1 /* FXPageControl.m */; };
 		8C8FB298E817329B3775E7E12BE7CC92 /* IValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE4A4702D263DCFFFA583F27AD983D /* IValueFormatter.swift */; };
@@ -114,7 +116,6 @@
 		9B53647E6877E38B0F49C09303DE7397 /* TransformerHorizontalBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC2244652293FB7C59CD00346C03C1 /* TransformerHorizontalBarChart.swift */; };
 		9BA2192CFE3163CC826D69306CED0F58 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D09A424F3AF0CD1D8C7520FB31124FF /* XLPagerTabStrip.bundle */; };
 		9CABBB1A02009EC2595AEAC4F61CDF04 /* MarkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE2D77BE4F693806DAF64E7EFC695A /* MarkerImage.swift */; };
-		9E699B89F951437407DE06C637E5A4B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		9F657DFF7C272E535F64138614B1763F /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA2CFB2697AB6C636CA2E2F37D87C5 /* ButtonBarPagerTabStripViewController.swift */; };
 		A3BB8FC5377913D61D701B3005417CE1 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACB2D2A570B33FFAC5779650DBD5D8C /* BaseButtonBarPagerTabStripViewController.swift */; };
 		A4151F881DAB4651899F9E8F510DA531 /* IBarLineScatterCandleBubbleChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B57086E00C8F648A044A4EC71A998 /* IBarLineScatterCandleBubbleChartDataSet.swift */; };
@@ -155,15 +156,14 @@
 		DCBAFF3CE02B5C32DDE0EBA4927EBAA1 /* ScatterChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035109F46F42D21F02D5E7EAF7E6B6BD /* ScatterChartView.swift */; };
 		DD142F02377F5E3B0EB7C5A94A756F66 /* IRadarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21132348154DE5826F1FB64A67535CD0 /* IRadarChartDataSet.swift */; };
 		DE8201138BC27360623DED5E33DB09F7 /* ScatterChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4E991EF20577AAFA0B1240C85132DE /* ScatterChartRenderer.swift */; };
+		DF1A14318725AE5E7DFE46CDAEFF72DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		E06C11517CF5EBC3AD4716BAF9DE7032 /* RadarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D598DEBA6CFC7C6B67341D9624B24C8C /* RadarChartView.swift */; };
-		E2517B7C4A6C38C63F7152B9EE476104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		E308065839E48AA7275DD27ABC737874 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8F2361554E33B2ABE2DFBF180DB51 /* SwipeDirection.swift */; };
 		E5B1F1D3579641AA5FF8C031950F56F7 /* BubbleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A239BF4495B2DCF23360D3ED90278 /* BubbleChartView.swift */; };
 		E6FC09D485B3A310B30A04CDA03AA9CB /* IPieChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F281B95BAA984788ADFF8169DEBA43 /* IPieChartDataSet.swift */; };
 		E79525D2BB5EFBA1170DDF31EFE69E1B /* BubbleChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790AF79FC3CF81C7B9027321FD78F1A /* BubbleChartData.swift */; };
 		EAFE66969B8288438DB654702FE920CF /* LineRadarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F2648257F8011054F8127E190B4865 /* LineRadarChartDataSet.swift */; };
 		ECA8832916B8D8EFFAB5A2C766A6330D /* BarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9EB175B4E051715CB41ACE8322BD7 /* BarChartDataSet.swift */; };
-		EE6D16F0CB69965A4ECDF133179B3AC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		EE96809B72CD956D93B2C74C5CEC3079 /* IChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB164B1CB354B64846993902084F375 /* IChartDataSet.swift */; };
 		F1657543192F8AE888B0EC60DEFE1A75 /* YAxisRendererRadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9538D1748D155269445E96F96E965 /* YAxisRendererRadarChart.swift */; };
 		F17F62DDB93ADF8E88628A6DEAE2D5E5 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E2F53EDBB4897E06A493334623301 /* ChartData.swift */; };
@@ -334,7 +334,6 @@
 		8DE2FB405BA9F770878818F36F962B69 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E910686426E564C02F5220C4ECE2750 /* Pods-OWStatsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OWStatsTests-dummy.m"; sourceTree = "<group>"; };
 		8EA9EB175B4E051715CB41ACE8322BD7 /* BarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/BarChartDataSet.swift; sourceTree = "<group>"; };
-		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93BC092515E15E39735E083A05CA1320 /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		95AD4CE7C09BE6BF3338EA9B9FA6E892 /* ChevronDownShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChevronDownShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/ChevronDownShapeRenderer.swift; sourceTree = "<group>"; };
@@ -363,13 +362,13 @@
 		B1C00E55BB75A7F1E33E5B91EAF4BF81 /* Pods-OWStatsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OWStatsTests-frameworks.sh"; sourceTree = "<group>"; };
 		B1F7B27FC5FD02892039ACEABF5366FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4292FA1A4A93A68C63051F5476AAB2C /* ILineChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ILineChartDataSet.swift; path = Source/Charts/Data/Interfaces/ILineChartDataSet.swift; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B790AF79FC3CF81C7B9027321FD78F1A /* BubbleChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartData.swift; path = Source/Charts/Data/Implementations/Standard/BubbleChartData.swift; sourceTree = "<group>"; };
 		B9859269685FAE956EF69932E801DF7E /* Pods-OWStats-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OWStats-umbrella.h"; sourceTree = "<group>"; };
 		BA3C0CE4A1EEDFEDCF063D3B5B06BDF5 /* BarChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartRenderer.swift; path = Source/Charts/Renderers/BarChartRenderer.swift; sourceTree = "<group>"; };
 		BA4E991EF20577AAFA0B1240C85132DE /* ScatterChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScatterChartRenderer.swift; path = Source/Charts/Renderers/ScatterChartRenderer.swift; sourceTree = "<group>"; };
 		BACB2D2A570B33FFAC5779650DBD5D8C /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		BB3DAB2EE8019DB91A71D62C3C771CC8 /* LineScatterCandleRadarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineScatterCandleRadarChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/LineScatterCandleRadarChartDataSet.swift; sourceTree = "<group>"; };
-		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BE57C11FE732B4DABE7E89E30C86DC59 /* ChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataProvider.swift; path = Source/Charts/Interfaces/ChartDataProvider.swift; sourceTree = "<group>"; };
 		BE9FB8A7E86A275C7886B57823261A04 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
 		BF431780773CCB6A6ADA80C05956AF62 /* BubbleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/BubbleChartDataSet.swift; sourceTree = "<group>"; };
@@ -393,6 +392,7 @@
 		D598DEBA6CFC7C6B67341D9624B24C8C /* RadarChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarChartView.swift; path = Source/Charts/Charts/RadarChartView.swift; sourceTree = "<group>"; };
 		D60E32D36B01455C94B9DF1BF0AFAC75 /* ViewPortJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewPortJob.swift; path = Source/Charts/Jobs/ViewPortJob.swift; sourceTree = "<group>"; };
 		D7E34E44EABD4042E923B1704F2D8C20 /* LineChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartRenderer.swift; path = Source/Charts/Renderers/LineChartRenderer.swift; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D89C24641215CB58E0DB2150C58ED6E4 /* BarLineScatterCandleBubbleChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarLineScatterCandleBubbleChartData.swift; path = Source/Charts/Data/Implementations/Standard/BarLineScatterCandleBubbleChartData.swift; sourceTree = "<group>"; };
 		DBE048B271578F2760AB4D5303C42783 /* BubbleChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartRenderer.swift; path = Source/Charts/Renderers/BubbleChartRenderer.swift; sourceTree = "<group>"; };
 		DCCF94D3535A0E4889B00BC65D364B35 /* PieRadarHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieRadarHighlighter.swift; path = Source/Charts/Highlight/PieRadarHighlighter.swift; sourceTree = "<group>"; };
@@ -427,7 +427,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2517B7C4A6C38C63F7152B9EE476104 /* Foundation.framework in Frameworks */,
+				52CDD6E57DE1E403687737A57717C361 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +435,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F859EF00F7D4E4F10030B65B72EC773 /* Foundation.framework in Frameworks */,
+				DF1A14318725AE5E7DFE46CDAEFF72DD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +450,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E699B89F951437407DE06C637E5A4B6 /* Foundation.framework in Frameworks */,
+				805C26328E942629D7243E5059372CF5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,8 +458,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A41F9245B9BA033D60F08919B131ACF /* Foundation.framework in Frameworks */,
-				7F019AA1B9A9D518B050C3811B780F31 /* UIKit.framework in Frameworks */,
+				2E9077DCB4BD6AEC1D91ECFD675333F4 /* Foundation.framework in Frameworks */,
+				787D3217D515A58149D325EA8428BEE2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,22 +467,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE6D16F0CB69965A4ECDF133179B3AC4 /* Foundation.framework in Frameworks */,
+				884A64DF6FF6F0BF11C83455C912AE22 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
-				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		137ADF5B5ED0639AC5FCD69804A3A452 /* XLPagerTabStrip */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,9 +655,18 @@
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		4556D78EA966734DE166ED15B7DA1D89 /* Pods-OWStats */ = {
@@ -1258,11 +1258,7 @@
 				INFOPLIST_FILE = "Target Support Files/Charts/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Charts/Charts.modulemap";
 				PRODUCT_MODULE_NAME = Charts;
 				PRODUCT_NAME = Charts;
@@ -1294,11 +1290,7 @@
 				INFOPLIST_FILE = "Target Support Files/Charts/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Charts/Charts.modulemap";
 				PRODUCT_MODULE_NAME = Charts;
 				PRODUCT_NAME = Charts;
@@ -1332,11 +1324,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-OWStatsTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OWStatsTests/Pods-OWStatsTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1371,11 +1359,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-OWStatsUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OWStatsUITests/Pods-OWStatsUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1426,11 +1410,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-OWStatsUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OWStatsUITests/Pods-OWStatsUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1464,11 +1444,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-OWStatsTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OWStatsTests/Pods-OWStatsTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1623,11 +1599,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-OWStats/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OWStats/Pods-OWStats.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1662,11 +1634,7 @@
 				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
 				PRODUCT_MODULE_NAME = XLPagerTabStrip;
 				PRODUCT_NAME = XLPagerTabStrip;
@@ -1715,11 +1683,7 @@
 				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
 				PRODUCT_MODULE_NAME = XLPagerTabStrip;
 				PRODUCT_NAME = XLPagerTabStrip;
@@ -1752,11 +1716,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-OWStats/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OWStats/Pods-OWStats.modulemap";
 				OTHER_LDFLAGS = "";

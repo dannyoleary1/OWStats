@@ -690,7 +690,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="OWLogo.png" width="205" height="205"/>
+        <image name="OWLogo.png" width="256" height="256"/>
         <image name="refresh.png" width="512" height="512"/>
     </resources>
 </document>

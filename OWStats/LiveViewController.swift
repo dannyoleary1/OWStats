@@ -15,6 +15,9 @@ class LiveViewController: UIViewController, IndicatorInfoProvider {
     
     @IBOutlet weak var webPlayer: WKWebView!
     
+    /*
+     Reference: Twitch website from report TODO
+     */
     override func viewDidLoad() {
         let interactiveEmbedCode = """
         <script src="https://player.twitch.tv/js/embed/v1.js"></script>

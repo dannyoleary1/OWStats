@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genji-load.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-nx-0yO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="genji_redux_by_nocluse-db89dmr.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-nx-0yO">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                         </subviews>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="genji-load.jpg" width="900" height="1273"/>
+        <image name="genji_redux_by_nocluse-db89dmr.jpg" width="800" height="678"/>
     </resources>
 </document>

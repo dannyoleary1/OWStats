@@ -21,7 +21,9 @@ class HeroStatsViewController: UIViewController, IndicatorInfoProvider, UICollec
         return (dataSet?.count)!
     }
     
-    
+    /*
+     Reference: https://medium.com/yay-its-erica/creating-a-collection-view-swift-3-77da289bb7c
+     */
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCellHero", for: indexPath) as! CollectionViewCellHero
         do{

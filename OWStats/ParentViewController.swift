@@ -187,15 +187,14 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     }
     */
     
+    /*
+     Sets up the other controllers using the library XLPagerTabStrip
+     */
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        
-        
-       
         let hero = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HeroStats")
         let achievements = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Achievements")
         let live = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Live")
          let player = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PlayerStats")
-       
         return [player, hero, achievements, live]
         
     }

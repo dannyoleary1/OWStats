@@ -9,7 +9,7 @@ DEPENDENCIES:
   - XLPagerTabStrip (~> 8.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Charts
     - XLPagerTabStrip
 
@@ -19,4 +19,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 7b494977b8a9c6882444fdcb10799bec5afa12c8
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.0
